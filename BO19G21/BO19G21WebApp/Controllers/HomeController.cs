@@ -10,6 +10,8 @@ namespace BO19G21WebApp.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.funkywunky = "test funky wunky";
+
             return View();
         }
 
