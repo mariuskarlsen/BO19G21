@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,6 @@ namespace Library.Model
 {
     public class Survey
     {
-        [Key]
         private int surveyId;
         public int SurveyId { get => surveyId; set => surveyId = value; }
 
@@ -33,6 +33,11 @@ namespace Library.Model
             SurveyId = NumberOfSurveys++;
             UserId = userId;
             CreationDate = DateTime.Now;
+        }
+
+        public override string ToString()
+        {
+            return $"SurveyId:{SurveyId}, UserId:{UserId}, CreationDate:{CreationDate}";
         }
     }
 }

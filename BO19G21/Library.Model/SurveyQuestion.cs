@@ -9,7 +9,6 @@ namespace Library.Model
 {
     public class SurveyQuestion
     {
-        [Key]
         private int surveyQuestionId;
         public int SurveyQuestionId { get => surveyQuestionId; set => surveyQuestionId = value; }
 
