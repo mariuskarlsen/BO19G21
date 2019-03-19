@@ -15,7 +15,7 @@ namespace BO19G21WebApp.Controllers
         {
             ViewBag.funkywunky = "test funky wunky";
             ViewBag.survey = await WebApi.GetSurvey(1);
-            return View();
+            return View();//
         }
 
         public ActionResult About()
